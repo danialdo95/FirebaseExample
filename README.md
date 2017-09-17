@@ -15,6 +15,16 @@ Android 15.0+ support
 
 ![screenshot](https://github.com/shiburagi/Messaging-App/blob/dev_shiburagi/guide/Screen%20Shot%202016-09-21%20at%2012.58.38%20AM.png)
 
+**Fourth** : change database rule..
+```json
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+```
+
 **Finally** : Now, you can run it by using your own Firebase storage.
 
 
