@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infideap.firebaseexample.AddActivity">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:id="@+id/layout_form"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_above="@+id/layout_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.infideap.stylishwidget.view.ATextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/textInput_name"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.infideap.stylishwidget.view.ATextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/textInput_salary"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Salary" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.infideap.stylishwidget.view.ATextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/textInput_no_cars"
+                    android:hint="No of Cars" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@id/layout_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.app.infideap.stylishwidget.view.AButton
+            android:layout_width="match_parent"
+            style="@style/Button.Success.Fill"
+            android:id="@+id/button_add"
+            android:text="add"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
